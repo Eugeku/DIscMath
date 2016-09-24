@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 /**
  * Created by Eugene13 on 22.09.2016.
  */
-abstract class Method implements VvodDan {
+abstract class Method implements Inputable {
     @Override
-    public MatrAandB vvodDannih() {
+    public Data inputData() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n;
         double[][] A;
@@ -49,7 +49,7 @@ abstract class Method implements VvodDan {
                 System.out.print("Повторите ввод элемента В[ " + ii + " ]:");
             }
         }
-        MatrAandB matrAandB = new MatrAandB(A, B, n);
-        return matrAandB;
+        Data data = new Data(A, B, n);
+        return data;
     }
 }

@@ -23,7 +23,7 @@ public class Solution {
         switch (numberOfMethod) {
             case 1: {
                 GaussMethod gaussMethod = new GaussMethod();
-                gaussMethod.simQ(gaussMethod.vvodDannih(),PRIZNAK_KS.ONE);
+                gaussMethod.simQ(gaussMethod.inputData(), SIGN_KS.ONE);
                 break;
             }
             case 2: {
