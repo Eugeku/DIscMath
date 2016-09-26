@@ -83,13 +83,13 @@ class CholeskyMethod extends Method {
         }
         for (k = 0; k < n; k++) {
             l1 = 0;
-            for (l3 = 0; l3 < k ; l3++) {
+            for (l3 = 0; l3 < k; l3++) {
                 l1 = l1 + L[k][l3] * L[k][l3];
             }
             L[k][k] = Math.sqrt(matA[k][k] - l1);
             l1 = 0;
             for (l3 = k + 1; l3 < n; l3++) {
-                for (l2 = 0; l2 < k ; l2++) {
+                for (l2 = 0; l2 < k; l2++) {
                     l1 = l1 + L[l3][l2] * L[k][l2];
                 }
                 L[l3][k] = (matA[l3][k] - l1) / L[k][k];
@@ -97,7 +97,7 @@ class CholeskyMethod extends Method {
         }
         for (k = 0; k < n; k++) {
             l1 = 0;
-            for (l3 = 0; l3 < k ; l3++) {
+            for (l3 = 0; l3 < k; l3++) {
                 l1 = l1 + L[k][l3] * y[l3];
             }
             y[k] = (vecB[k] - l1) / L[k][k];
