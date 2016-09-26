@@ -49,7 +49,6 @@ abstract class Method implements Inputable {
                 System.out.print("Повторите ввод элемента В[ " + ii + " ]:");
             }
         }
-        Data data = new Data(A, B, n);
-        return data;
+        return new Data(A, B, n);
     }
 }

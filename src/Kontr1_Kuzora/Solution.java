@@ -27,6 +27,13 @@ public class Solution {
                 break;
             }
             case 2: {
+                CholeskyMethod choleskyMethod = new CholeskyMethod();
+                Data data = choleskyMethod.inputData();
+                choleskyMethod.inspection(data);
+                System.out.println("Количество операций t = " + choleskyMethod.holet(data));
+                for (int i = 0; i < data.getSizeN(); i++) {
+                    System.out.printf("x(%2d ) = %f\n", i+1, data.getVectorB()[i]);
+                }
                 break;
             }
         }

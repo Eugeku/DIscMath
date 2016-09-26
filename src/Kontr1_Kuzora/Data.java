@@ -8,12 +8,16 @@ class Data {
     private double[] vectorB;
     private int sizeN;
     private double[][] supplementedMatrix;
+    private double[][] transposedMatrix;
+    private double[][] symmetricMatrix;
 
-    Data(double[][] MatA, double[] vectorB, int sizeN) {
-        this.matA = MatA;
+    Data(double[][] matA, double[] vectorB, int sizeN) {
+        this.matA = matA;
         this.vectorB = vectorB;
         this.sizeN = sizeN;
-        this.supplementedMatrix = new double[sizeN][sizeN+1];
+        this.supplementedMatrix = new double[sizeN][sizeN + 1];
+        this.transposedMatrix = new double[sizeN + 1][sizeN];
+        this.symmetricMatrix = new double[sizeN + 1][sizeN + 1];
     }
 
     double[][] getMatA() {
@@ -30,5 +34,13 @@ class Data {
 
     double[][] getSupplementedMatrix() {
         return supplementedMatrix;
+    }
+
+    double[][] getTransposedMatrix() {
+        return transposedMatrix;
+    }
+
+    double[][] getSymmetricMatrix() {
+        return symmetricMatrix;
     }
 }

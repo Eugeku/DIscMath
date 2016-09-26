@@ -11,7 +11,7 @@ class GaussMethod extends Method {
         label1:
         {
             n = data.getSizeN();
-            double[][]supMatrix = data.getSupplementedMatrix();
+            double[][] supMatrix = data.getSupplementedMatrix();
             for (i = 0; i < n; i++) {
                 for (j = 0; j < n; j++) {
                     supMatrix[i][j] = data.getMatA()[i][j];
@@ -63,7 +63,7 @@ class GaussMethod extends Method {
             }
             System.out.println("");
             for (i = 0; i < n; i++) {
-                System.out.println("x( " + i + " )= " + data.getVectorB()[i]);
+                System.out.printf("x(%2d ) = %f\n", i + 1, data.getVectorB()[i]);
             }
             System.out.println(ks);
         }
