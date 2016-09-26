@@ -8,7 +8,8 @@ import java.io.InputStreamReader;
  * Class Solution:
  * 1) Выбор метода решения СЛАУ;
  * 2) Создание объектов в которых реализована та или иная логика решения СЛАУ
- * и последующий вызов методов.
+ * и последующий вызов методов;
+ * 3) main class.
  */
 public class Solution {
     public static void main(String[] args) {
