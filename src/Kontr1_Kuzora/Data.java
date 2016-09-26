@@ -2,6 +2,9 @@ package Kontr1_Kuzora;
 
 /**
  * Created by Eugene13 on 22.09.2016.
+ * Class Data:
+ * 1) Хранит все исходные и полученные данные;
+ * 2) Доступ к приватным полям организован через Геттеры.
  */
 class Data {
     private double[][] matA;

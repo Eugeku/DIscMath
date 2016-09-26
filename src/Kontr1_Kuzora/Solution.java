@@ -5,6 +5,10 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Eugene13 on 22.09.2016.
+ * Class Solution:
+ * 1) Выбор метода решения СЛАУ;
+ * 2) Создание объектов в которых реализована та или иная логика решения СЛАУ
+ * и последующий вызов методов.
  */
 public class Solution {
     public static void main(String[] args) {

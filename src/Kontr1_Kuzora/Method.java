@@ -5,6 +5,9 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Eugene13 on 22.09.2016.
+ * Class Method:
+ * 1) Родительский класс для классов GaussMethod и CholeskyMethod;
+ * 2) Реализует интерфейс Inputable (ввод данных).
  */
 abstract class Method implements Inputable {
     @Override

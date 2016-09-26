@@ -2,6 +2,10 @@ package Kontr1_Kuzora;
 
 /**
  * Created by Eugene13 on 22.09.2016.
+ * Class GaussMethod:
+ * 1) Реализована основная логика решения СЛАУ методом Гаусса;
+ * 2) Наследует все методы и поля от класса
+ * Method (Data inputData()-ввод данных);
  */
 class GaussMethod extends Method {
     void simQ(Data data, SIGN_KS ks) {

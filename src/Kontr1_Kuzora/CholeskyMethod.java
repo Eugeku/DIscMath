@@ -2,6 +2,12 @@ package Kontr1_Kuzora;
 
 /**
  * Created by Eugene13 on 24.09.2016.
+ *  * Class CholeskyMethod:
+ * 1) Реализована основная логика решения СЛАУ методом Холецкого;
+ * 2) Наследует все методы и поля от класса
+ * Method (Data inputData()-ввод данных);
+ * 3) В классе реализован метод проверки
+ * введенных матриц (void inspection(Data data)).
  */
 class CholeskyMethod extends Method {
     void inspection(Data data) {
