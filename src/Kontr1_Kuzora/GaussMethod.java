@@ -41,14 +41,14 @@ class GaussMethod extends Method {
                     ks = SIGN_KS.ZERO;
                 }
                 if (K1 != i) {
-                    for (j = 0; j < n + 1; j++) {//+
+                    for (j = 0; j < n + 1; j++) {
                         u = supMatrix[i][j];
                         supMatrix[i][j] = supMatrix[K1][j];
                         supMatrix[K1][j] = u;
                     }
                 }
                 v = supMatrix[i][i];
-                for (j = i; j < n + 1; j++) {//+
+                for (j = i; j < n + 1; j++) {
                     supMatrix[i][j] = supMatrix[i][j] / v;
                 }
                 for (l = i + 1; l < n; l++) {
